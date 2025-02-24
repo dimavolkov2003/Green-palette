@@ -1,6 +1,9 @@
 body {
+    margin: 0;
+    font-family: "Inter", serif;
     font-size: 18px;
     font-weight: 500;
+    line-height: 1.2;
     color: #0C3E2E;
 }
 
@@ -13,8 +16,22 @@ a {
     color: inherit;
 }
 
+.header {
+    background-image: url(../images/header-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+.header__inner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -26,6 +43,7 @@ a {
 }
 
 .menu__list {
+    margin: 0;
     display: flex;
     gap: 0 30px;
     
@@ -34,4 +52,40 @@ a {
 .menu__link {
     font-size: 16px;
     text-transform: uppercase;
+}
+
+.phone {
+    color: #BB8A52;
+}
+
+.header-content__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 22px;
+    align-items: center;
+}
+
+.header__title {
+    max-width: 428px;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 20px 0 80px;
+}
+
+.header-content__text {
+    max-width: 510px;
+}
+
+.header-content__btn {
+    display: inline-block;
+    background-color: #FFBA00;
+    font-size: 20px;
+    padding: 20px 38.5px;
+    margin-top: 50px;
+}
+
+.header__text {
+    font-size: 24px;
+    text-align: center;
+    padding: 25px 0;
 }
