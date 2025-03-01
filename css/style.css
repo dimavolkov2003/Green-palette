@@ -76,6 +76,10 @@ a {
     max-width: 510px;
 }
 
+.header-content__text span{
+    color: #CC2E2E;
+}
+
 .header-content__btn {
     display: inline-block;
     background-color: #FFBA00;
@@ -87,5 +91,57 @@ a {
 .header__text {
     font-size: 24px;
     text-align: center;
+    margin: 0;
     padding: 25px 0;
+}
+
+.main {
+    margin-top: 156px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 22px;
+    align-items: center;
+}
+
+.about-content_text {
+    max-width: 506px;
+}
+
+.about-content_text span{
+    font-family: "Balsamiq Sans", serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.about-content__title {
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.about-content__successes {
+    display: flex;
+    justify-content: start;
+    gap: 0 30px;
+    color: #BB8A52;
+}
+
+.about-content__success-number {
+    margin: 0 0 5px;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-content__success-text {
+    margin: 0;
 }
