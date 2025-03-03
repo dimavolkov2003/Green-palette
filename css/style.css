@@ -13,7 +13,7 @@ body {
     margin-bottom: 50px;
 }
 
-li {
+ul li {
     list-style: none;
 }
 
@@ -152,7 +152,7 @@ a {
 }
 
 .why__text {
-    max-width: 583px;
+    max-width: 580px;
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 40px;
@@ -164,9 +164,32 @@ a {
     align-items: center;
 }
 
-.why__list-text {
-    max-width: 583px;
+.why__inner-list {
+    margin: 0;
+    list-style-type: none;
+    counter-reset: my-counter;
+    padding-left: 10px;
+}
+
+.why__inner-item::before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    padding-right: 5px;
+}
+
+.why__inner-item {
     font-size: 28px;
     font-weight: 600;
-    margin-bottom: 55px;
+}
+
+.why__inner-item + .why__inner-item {
+    margin-top: 55px;
+}
+
+.why__inner-item.pl--60 {
+    padding-left: 60px;
+}
+
+.why__inner-item.pl--90 {
+    padding-left: 90px;
 }
